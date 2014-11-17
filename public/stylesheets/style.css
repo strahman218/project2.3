@@ -1,0 +1,53 @@
+/* table format*/
+table, th, td {
+  width: 50%;
+}
+
+/* items in table format */
+th, td {
+  padding: 5px;
+}
+/* all div tags will inherit from this style
+div {
+  float: left;
+}*/
+
+/* style classes */
+/* these are simply named styles that can be called by any/multiple HTML tags */
+
+/* define the style that will be used by the parent DIV object  for absolute positioning*/
+div#div0 {
+  position: relative;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+}
+
+div#div1 {
+  height: 10%;
+  width: 100%;
+
+}
+
+div#div2 {
+
+  width: 40%;
+  height: 40%;
+
+}
+div#div3 {
+
+  width: 40%;
+  height: 40%;
+}
+
+div#div4{
+  width: 100%;
+  align-content: center;
+}
+
+
+#mainImg{
+  height: 225px;
+  width:300px;
+}
