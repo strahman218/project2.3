@@ -2,14 +2,16 @@
    Created by saraf on 11/17/2014.
 
 extends layout
-// displays body of layout
+
 block content
    div#div0
       div#div1
          h1 My Home Town: Lexington, Massachusetts
+         // this area contains the town motto and title
          div#textarea1 What a Glorious Morning for America!
       div#div2
-         select#selector
+         // this section contains images
+         select#pulldown
             option Select Image
             option(value = "0") Harrington
             option(value = "1") Minuteman Statue
@@ -19,8 +21,12 @@ block content
             option(value = "5") Lexington High School
          br
          br
-         img#mainImg(src='images/Lex1.jpg')
+         img#mainImage(src='images/harrington.jpg')
       div#div3
+         // this section will provide information about lexington
          h2 Facts about Lexington
          div#content
+            // this section will display the population and population
+            // changes in Lexington since 1850
       div#div4
+

@@ -1,9 +1,38 @@
 #!/usr/bin/env node
-//var debug = require('debug')('project2.3');
+
+/* the flow of the project is as follows:
+PUBLIC FOLDER
+  IMAGE FOLDER
+    images that are used for the website
+  JAVASCRIPTS FOLDER
+    the script that initializes the 1-dimensional photo and text arrays
+    also initilizes the web page using a start() function and
+    provides code for how the text, photo, and table should change together
+  STYLESHEETS FOLDER
+    contain style information for each DIV class, the table, as well
+    as the main image displayed on loading the page
+  TEXT FOLDER
+    All headlines for the page. These should change every 7 seconds
+ROUTES FOLDER
+  index.js: only changed the site name from 'newsletter' to 'Lexington Newsletter'
+  users.js: no changes made
+  project.js: creates 2D array for table and gets text for DIV 3 from jade files
+VIEWS FOLDER
+  error.jade, index.jade: no changes
+  layout.jade: added a few dependencies
+  news1.jade-news4.jade: .jade files that contain contain for "Facts about Lexington" section
+  newsletter.jade: layout of the web page
+  table.jade: the function that would change the contents of the table
+*/
+
+
+var debug = require('debug')('project2.3');
 var app = require('../app');
 
+//set port to 4036
 app.set('port', process.env.PORT || 4036);
 
+// start node server
 var server = app.listen(app.get('port'), function() {
-  console.log('Express server listening on port ' + server.address().port);
+  debug('Express server listening on port ' + server.address().port);
 });

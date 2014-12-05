@@ -1,0 +1,16 @@
+//Created by saraf on 11/09/2014.
+
+var express = require('express');
+var jade = require('jade');
+var router = express.Router();
+
+h2 Population Changes since 1850
+table
+   tr
+      th Year
+      th Population
+      th Percentage changed
+   - for (var i=0; i<5; i++)
+      tr
+      - for (var j=0; j<3; j++)
+         td #{table[i][j]}

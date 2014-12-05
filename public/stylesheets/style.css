@@ -1,53 +1,62 @@
-/* table format*/
+/* styles for each div class */
+div#div0{
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+
+div#div1 {
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+  position: absolute;
+  margin-top: 10px;
+  layout: box;
+  left: 20px;
+  width: 1100px;
+  height: 100px;
+  text-align: center;
+}
+
+div#div2 {
+  position: absolute;
+  top: 140px;
+  width: 550px;
+  height: 300px;
+  margin-top: 20px;
+  padding-left: 10px;
+}
+
+div#div3 {
+  position: absolute;
+  top: 140px;
+  layout: box;
+  left: 300px;
+  width: 550px;
+  text-align: center;
+}
+
+div#div4 {
+  position: absolute;
+  top: 650px;
+  width: 1100px;
+  text-align: center;
+}
+
+#mainImage {
+  height: 100%;
+  width: 50%;
+  margin: 1px;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+}
+
+
+/* table formatting */
 table, th, td {
   width: 50%;
 }
 
-/* items in table format */
 th, td {
   padding: 5px;
-}
-/* all div tags will inherit from this style
-div {
-  float: left;
-}*/
-
-/* style classes */
-/* these are simply named styles that can be called by any/multiple HTML tags */
-
-/* define the style that will be used by the parent DIV object  for absolute positioning*/
-div#div0 {
-  position: relative;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  padding-left: 5%;
-}
-
-div#div1 {
-  height: 10%;
-  width: 100%;
-
-}
-
-div#div2 {
-
-  width: 40%;
-  height: 40%;
-
-}
-div#div3 {
-
-  width: 40%;
-  height: 40%;
-}
-
-div#div4{
-  width: 100%;
-  align-content: center;
-}
-
-
-#mainImg{
-  height: 225px;
-  width:300px;
 }
