@@ -24,7 +24,7 @@ router.get('/data', function(req, res) {
 });
 
 /* GET new text from jade file*/
-router.get('/textContent/:name', function(req, res) {
+router.get('/textContent/:news', function(req, res) {
     var dir = __dirname.split("/").slice(0,-1).join("/");
     res.render(req.param("news"), {});
 });
