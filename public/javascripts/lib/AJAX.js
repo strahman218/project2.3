@@ -1,7 +1,20 @@
 /**
  * Created by saraf on 11/17/2014.
  */
-(function(window, document) {
+
+window.AJAX = function(uri, callback, options) {
+    httpRequest = new XMLHttpRequest();
+    httpRequest.onreadystatechange = function () {
+        if (httpRequest.readyState == 4) {
+            callback(httpRequest.responseText);
+        }
+    };
+    httpRequest.open('GET', uri);
+    httpRequest.send();
+};
+
+
+/*(function(window, document) {
 
     ajax = {
         // send a get request
@@ -20,4 +33,4 @@
 
     window.jax = ajax.get;
 
-})(window, document, undefined);
+})(window, document, undefined);*/

@@ -26,7 +26,7 @@ VIEWS FOLDER
 */
 
 
-var debug = require('debug')('project2.3');
+var debug = require('debug')('');
 var app = require('../app');
 
 //set port to 4036
